@@ -1,0 +1,64 @@
+generated: '2026-08-12'
+method: probed
+source: live GET probes of the /.well-known/ discovery surface
+host: https://www.incredo.com
+note: >-
+  Every probed path returned 404. The origin is a Webflow-hosted marketing site: all
+  /.well-known/* paths answer 404 with a plain "Invalid .well-known request" HTML body,
+  and all other paths answer 404 with the site's standard HTML 404 shell. No discovery
+  document of any kind is served. Because no path returned a real document, NO
+  WellKnown / SecurityTxt / APICatalog pointer is emitted in apis.yml — this file
+  records a verified absence, not a presence.
+hosts_probed:
+- https://www.incredo.com
+- https://www.douxmatok.com  # 301 -> https://www.incredo.com/ (same origin, same results)
+- https://www.incredosugar.com  # 301 -> https://www.incredo.com/ (same origin, same results)
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery. No apis[] entry exists, so the website host was probed
+    directly along with candidate API/docs subdomains. Nothing was found; no OpenAPI,
+    GraphQL, MCP or A2A surface exists to capture.
+  paths:
+  - {path: /openapi.json, status: 404, body: html-404-shell}
+  - {path: /openapi.yaml, status: 404, body: html-404-shell}
+  - {path: /swagger.json, status: 404, body: html-404-shell}
+  - {path: /v1/openapi.json, status: 404, body: html-404-shell}
+  - {path: /api-docs, status: 404, body: html-404-shell}
+  - {path: /docs, status: 404, body: html-404-shell}
+  - {path: /redoc, status: 404, body: html-404-shell}
+  - {path: /graphql, status: 404, body: html-404-shell}
+  - {path: /llms.txt, status: 404, body: html-404-shell}
+  - {path: /robots.txt, status: 200, body: 'text; sitemap reference only'}
+  - {path: /sitemap.xml, status: 200, body: 'xml; 12 URLs, all marketing pages'}
+  subdomains:
+  - {host: api.incredo.com, dns: NXDOMAIN}
+  - {host: developer.incredo.com, dns: NXDOMAIN}
+  - {host: dev.incredo.com, dns: NXDOMAIN}
+  - {host: docs.incredo.com, dns: NXDOMAIN}
+  - {host: app.incredo.com, dns: NXDOMAIN}
+  - {host: portal.incredo.com, dns: NXDOMAIN}
+  - {host: api.douxmatok.com, dns: NXDOMAIN}
+  - {host: developer.douxmatok.com, dns: NXDOMAIN}
+  registries:
+  - {registry: npm, query: douxmatok, results: 0}
+  - {registry: npm, query: incredo, results: 'none first-party'}
+  - {registry: pypi, package: incredo, status: 404}
+  - {registry: github, org: douxmatok, status: 404}
+  - {registry: github, org: incredo, status: 200, note: 'org exists but is empty (0 public
+      repos, no name/blog/description, created 2015-08-11) — cannot be attributed to
+      Incredo Ltd, so it is NOT recorded as first-party'}

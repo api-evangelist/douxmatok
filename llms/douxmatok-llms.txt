@@ -1,0 +1,47 @@
+# DouxMatok (Incredo)
+
+> DouxMatok is an Israeli food-technology company, rebranded as Incredo Ltd in May 2023,
+> that makes Incredo Sugar — a sugar-based sugar-reduction ingredient built on a patented
+> carrier delivery technology that improves how efficiently real cane or beet sugar reaches
+> sweet taste receptors, letting manufacturers cut sugar 30-50% in bakery, confectionery,
+> chocolate, spreads and nut butters without artificial sweeteners or sugar alcohols.
+> It is a B2B ingredient manufacturer, not a software vendor.
+
+Generated: 2026-08-12
+Method: generated (from apis.yml and this repo's artifacts — the provider serves no /llms.txt;
+https://www.incredo.com/llms.txt returned HTTP 404 on 2026-08-12)
+Maintained by: API Evangelist (https://apievangelist.com) — third-party profile, not the provider
+
+## API surface
+
+There is none. DouxMatok / Incredo publishes no API, no SDK, no webhooks, no developer
+portal and no machine-readable specification. Contract discovery on 2026-08-12 probed the
+website host for OpenAPI, Swagger, GraphQL, MCP and A2A agent-card surfaces, and probed
+eight candidate API/docs subdomains — every path 404'd and every subdomain was NXDOMAIN.
+See `well-known/douxmatok-well-known.yml` for the full probe record with status codes.
+
+Do not infer, synthesize, or attempt to call an Incredo API. It does not exist.
+
+## Company
+
+- [Incredo home](https://www.incredo.com/): company site (was douxmatok.com and incredosugar.com, both now 301 here)
+- [About](https://www.incredo.com/about): leadership, investors, technology background
+- [Incredo Sugar](https://www.incredo.com/incredo-sugar): the product and its applications
+- [Partner with us](https://www.incredo.com/partners): B2B manufacturer enquiry route
+- [Impact](https://www.incredo.com/impact): sugar-reduction and health positioning
+- [Media center](https://www.incredo.com/media-center): press and coverage
+- [Contact](https://www.incredo.com/contact): the only inbound channel; there is no support portal
+- [LinkedIn](https://www.linkedin.com/company/douxmatok/): still published under the douxmatok handle
+
+## Legal
+
+- [Privacy policy](https://www.incredo.com/legal/privacy-policy)
+- [Terms of use](https://www.incredo.com/legal/terms-of-use)
+- [Return policy](https://www.incredo.com/legal/return-policy)
+
+## Artifacts in this profile
+
+- `apis.yml`: the APIs.json 0.20 profile for this company
+- `security/douxmatok-domain-security.yml`: probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture
+- `well-known/douxmatok-well-known.yml`: the /.well-known/ and contract-discovery probe record
+- `llms/douxmatok-llms.txt`: this file

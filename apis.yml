@@ -1,7 +1,20 @@
 aid: douxmatok
 name: DouxMatok
-description: 'DouxMatok is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'DouxMatok is an Israeli food-technology company, rebranded as Incredo
+  Ltd in May 2023, that develops Incredo Sugar — a sugar-based sugar-reduction ingredient
+  built on a patented silica-carrier delivery technology that improves how efficiently
+  real cane or beet sugar reaches sweet taste receptors, enabling manufacturers to
+  cut sugar in bakery, confectionery, chocolate, spreads and nut butters by 30-50%
+  (the company markets up to 70%) without artificial sweeteners, sugar alcohols or
+  the aftertaste and cooling effects of alternative sweeteners. The technology is
+  protected by more than 20 patents, was named a TIME Best Invention of 2020, and
+  was featured in Netflix''s "Explained". The company sells as a B2B ingredient to
+  food manufacturers through distributors and partner enquiries, and is backed by
+  Sienna Venture Capital, Pitango, DSM-Firmenich Venturing and BlueRed Partners. It
+  is an ingredient manufacturer, not a software vendor: as of this profile it operates
+  a twelve-page marketing website and publishes no API, SDK, developer portal or
+  machine-readable specification of any kind.'
+image: https://cdn.prod.website-files.com/5fe3ba6011d5957fbf4db778/600070a873051c826ba7d885_og.png
 url: https://raw.githubusercontent.com/api-evangelist/douxmatok/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +25,12 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Food Technology
+- Ingredients
+- Sugar Reduction
+- Manufacturing
+- Consumer Packaged Goods
+- Israel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,54 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.incredo.com/
+- type: About
+  url: https://www.incredo.com/about
+- type: Contact
+  url: https://www.incredo.com/contact
+- type: Support
+  url: https://www.incredo.com/contact
+- type: PrivacyPolicy
+  url: https://www.incredo.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.incredo.com/legal/terms-of-use
+- type: LinkedIn
+  url: https://www.linkedin.com/company/douxmatok/
+- type: DomainSecurity
+  url: security/douxmatok-domain-security.yml
+- type: LLMsTxt
+  url: llms/douxmatok-llms.txt
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Incredo (formerly DouxMatok) sells a physical sugar-reduction ingredient to food
+    manufacturers; its entire web presence is a twelve-page Webflow marketing site whose
+    sitemap contains no developer, docs or API page, and api/developer/docs/app/portal
+    subdomains on both incredo.com and douxmatok.com do not resolve.
+  evidence:
+  - url: https://www.incredo.com/sitemap.xml
+    status: 200
+  - url: https://www.incredo.com/openapi.json
+    status: 404
+  - url: https://www.incredo.com/llms.txt
+    status: 404
+  - url: https://www.incredo.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.incredo.com/docs
+    status: 404
+  checked: '2026-08-12'
+x-rebrand:
+  current_name: Incredo Ltd
+  previous_name: DouxMatok
+  date: '2023-05'
+  domains:
+  - douxmatok.com
+  - incredosugar.com
+  note: douxmatok.com and incredosugar.com both 301 to https://www.incredo.com/ (probed
+    2026-08-12, HTTP 200 after redirect).

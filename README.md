@@ -42,5 +42,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-DouxMatok is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+DouxMatok is an Israeli food-technology company, rebranded as **Incredo Ltd** in May 2023, that
+develops **Incredo Sugar** — a sugar-based sugar-reduction ingredient built on a patented carrier
+delivery technology that improves how efficiently real cane or beet sugar reaches sweet taste
+receptors, enabling manufacturers to cut sugar 30–50% in bakery, confectionery, chocolate, spreads
+and nut butters without artificial sweeteners or sugar alcohols. The technology is protected by
+more than 20 patents and was named a TIME Best Invention of 2020.
+
+- Website: https://www.incredo.com/ (`douxmatok.com` and `incredosugar.com` both 301 here)
+- About: https://www.incredo.com/about
+- Contact: https://www.incredo.com/contact
+- LinkedIn: https://www.linkedin.com/company/douxmatok/
+
+## API surface
+
+**None.** Incredo is a B2B ingredient manufacturer, not a software vendor. It publishes no API,
+SDK, webhooks, developer portal or machine-readable specification. Contract discovery on
+2026-08-12 probed the website host for OpenAPI/Swagger/GraphQL/MCP/A2A surfaces and probed eight
+candidate API and docs subdomains — every path returned 404 and every subdomain was NXDOMAIN.
+The full probe record, with status codes, is in
+[`well-known/douxmatok-well-known.yml`](well-known/douxmatok-well-known.yml).
