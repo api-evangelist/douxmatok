@@ -14,6 +14,17 @@ description: 'DouxMatok is an Israeli food-technology company, rebranded as Incr
   is an ingredient manufacturer, not a software vendor: as of this profile it operates
   a twelve-page marketing website and publishes no API, SDK, developer portal or
   machine-readable specification of any kind.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/5fe3ba6011d5957fbf4db778/600070a873051c826ba7d885_og.png
 url: https://raw.githubusercontent.com/api-evangelist/douxmatok/refs/heads/main/apis.yml
 x-type: company
