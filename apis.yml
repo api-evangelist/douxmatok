@@ -25,6 +25,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/5fe3ba6011d5957fbf4db778/600070a873051c826ba7d885_og.png
 url: https://raw.githubusercontent.com/api-evangelist/douxmatok/refs/heads/main/apis.yml
 x-type: company
