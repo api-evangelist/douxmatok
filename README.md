@@ -64,23 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-DouxMatok is an Israeli food-technology company, rebranded as **Incredo Ltd** in May 2023, that
-develops **Incredo Sugar** — a sugar-based sugar-reduction ingredient built on a patented carrier
-delivery technology that improves how efficiently real cane or beet sugar reaches sweet taste
-receptors, enabling manufacturers to cut sugar 30–50% in bakery, confectionery, chocolate, spreads
-and nut butters without artificial sweeteners or sugar alcohols. The technology is protected by
-more than 20 patents and was named a TIME Best Invention of 2020.
+DouxMatok is an Israeli food-technology company, rebranded as Incredo Ltd in May 2023, that develops Incredo Sugar — a sugar-based sugar-reduction ingredient built on a patented silica-carrier delivery technology that improves how efficiently real cane or beet sugar reaches sweet taste receptors, enabling manufacturers to cut sugar in bakery, confectionery, chocolate, spreads and nut butters by 30-50% (the company markets up to 70%) without artificial sweeteners, sugar alcohols or the aftertaste and cooling effects of alternative sweeteners. The technology is protected by more than 20 patents, was named a TIME Best Invention of 2020, and was featured in Netflix's "Explained". The company sells as a B2B ingredient to food manufacturers through distributors and partner enquiries, and is backed by Sienna Venture Capital, Pitango, DSM-Firmenich Venturing and BlueRed Partners. It is an ingredient manufacturer, not a software vendor: as of this profile it operates a twelve-page marketing website and publishes no API, SDK, developer portal or machine-readable specification of any kind.
 
-- Website: https://www.incredo.com/ (`douxmatok.com` and `incredosugar.com` both 301 here)
-- About: https://www.incredo.com/about
-- Contact: https://www.incredo.com/contact
-- LinkedIn: https://www.linkedin.com/company/douxmatok/
+**Areas:** Company · Food Technology · Ingredients · Sugar Reduction · Manufacturing · Consumer Packaged Goods · Israel
 
-## API surface
+## DouxMatok on APIs.io
 
-**None.** Incredo is a B2B ingredient manufacturer, not a software vendor. It publishes no API,
-SDK, webhooks, developer portal or machine-readable specification. Contract discovery on
-2026-08-12 probed the website host for OpenAPI/Swagger/GraphQL/MCP/A2A surfaces and probed eight
-candidate API and docs subdomains — every path returned 404 and every subdomain was NXDOMAIN.
-The full probe record, with status codes, is in
-[`well-known/douxmatok-well-known.yml`](well-known/douxmatok-well-known.yml).
+Everything profiled for DouxMatok is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/douxmatok/](https://apis.io/providers/douxmatok/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Douxmatok Domain Security](https://apis.io/security/douxmatok/douxmatok-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.incredo.com/)
+- [Support](https://www.incredo.com/contact)
+- [Terms of service](https://www.incredo.com/legal/terms-of-use)
+- [Privacy policy](https://www.incredo.com/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/douxmatok/](https://apis.io/providers/douxmatok/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DouxMatok: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/douxmatok/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
